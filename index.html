@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+  <title>WebRTC Seminar Demo</title>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <title>Realtime communication with WebRTC</title>
-
-  <link rel="stylesheet" href="/css/main.css" />
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style type="text/css">
-  #remoteVideo{
-    width: 1300px;
-    height: 600px;
-  }
-</style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
 <body>
-
+  <div class="container">
+    <center><h1>WebRTC One to One Video Chat Demo</h1></center>
+    <div class="jumbotron">
+      <div id="videos" >
+            <video width="250px" height="170px" id="localVideo" class="w3-display-topright" style="background-color: #000;margin-top: 78px;margin-right: 95px; " autoplay muted></video>
+           <video width="1100px" height="560px" id="remoteVideo"  style="background-color: #888;margin-left: -40px;margin-top: -30px;" autoplay></video> 
+  
+        </div>
  
-    <div id="videos" >
-      <video width="250px" height="170px" id="localVideo" class="w3-display-topright"  autoplay muted></video>
-      <video width="1300px" height="600px" id="remoteVideo"   autoplay></video>
+      </div>
     </div>
- 
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="js/lib/adapter.js"></script>
-  <script src="js/main.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/lib/adapter.js"></script>
+    <script src="js/main.js"></script>
+
+  
 
 </body>
-
 </html>
