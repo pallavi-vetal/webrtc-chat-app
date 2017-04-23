@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Realtime communication with WebRTC</title>
+
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+  #remoteVideo{
+    width: 1300px;
+    height: 600px;
+  }
+</style>
+</head>
+
+<body>
+
+ 
+    <div id="videos" >
+      <video width="250px" height="170px" id="localVideo" class="w3-display-topright"  autoplay muted></video>
+      <video width="1300px" height="600px" id="remoteVideo"   autoplay></video>
+    </div>
+ 
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/lib/adapter.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
